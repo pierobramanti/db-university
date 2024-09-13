@@ -5,11 +5,15 @@ SELECT COUNT(*) as "enrolled_students", YEAR(`enrolment_date`) as "enrolment_yea
 FROM `students`
 GROUP BY `enrolment_year`;
 
+--------------------------------------------------------------------------------
+
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
 SELECT COUNT(*) AS "teachers_buildings",`office_address` 
 FROM teachers 
 GROUP BY `office_address`;
+
+--------------------------------------------------------------------------------
 
 3. Calcolare la media dei voti di ogni appello d'esame
 
@@ -18,3 +22,5 @@ GROUP BY `office_address`;
 SELECT COUNT(*) as `Courses_degrees`, `department_id` as "Department", `Name` 
 FROM `degrees` 
 GROUP BY `department_id`;
+
+--------------------------------------------------------------------------------
